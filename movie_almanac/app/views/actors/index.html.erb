@@ -1,0 +1,10 @@
+<h1>Actors#index</h1>
+<p>Find me in app/views/actors/index.html.erb</p>
+
+<% @actors.each do |actor| %>
+<p>Actor's Name: <%= actor.first_name %> <%= actor.last_name %> </p>
+ <%actor.movies.each do |movie|%> 
+ <p>Movies: <%=movie.title%> </p>
+
+<%end%>
+<%end%>
